@@ -1,0 +1,1 @@
+const getIssuer=n=>(/^4(\d{12}|\d{15})$/.test(n)?"VISA":/^3[4|7]\d{13}$/.test(n)?"AMEX":/^5[1-5]\d{14}$/.test(n)?"Mastercard":/^6011\d{12}$/.test(n)?"Discover":"Unknown");
